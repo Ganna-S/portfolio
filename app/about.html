@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <div class="aside">
+
+    <section class="aside">
         <div class="overlay"></div>
         <div class="container-aside">
             <div class="container-aside-items">
@@ -228,7 +229,7 @@
                 <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
             </filter>
         </svg>
-    </div>
+    </section>
     <header class="header">
         <div class="container header__container">
             <div class="header__content">
@@ -256,57 +257,181 @@
             </div>
         </div>
     </header>
-    <section class="main-screen">
+    <section class="about-page">
         <div class="container">
-            <div class="main-screen__inner">
-                <div class="main-text" id="selector">
-                    <h3>Hi there !</h3>
-                    <h1 class="ah-headline">
-                        I'm
-                        <span class="ah-words-wrapper">
-                            <b class="is-visible">ganna shutenko</b>
-                            <b>a HTML/CSS Developer</b>
-                            <b>a freelancer</b>
-                        </span>
+            <div class="about-page__inner">
+                <img src="./images/profile.jpg" alt="Ganna Shutenko" class="about-page__img">
+                <div class="about-page__content">
+                    <h1 class="about-page__title">
+                        About me
                     </h1>
-                    <p class="main-screen__text">
-                        Thrilled to work on interesting projects with good people and make this world more
-                        awesome from November 2019.
+                    <p class="about-page__text">
+                        Thrilled to work on interesting projects with good people and make this world more awesome from
+                        November 2019.
                     </p>
-                    <p class="main-screen__text main-screen__text--other">
-                        I am highly motivated and enthusiastic always willing to
-                        learn, work well with others as well as efficiently on my own. So, I am looking for new
-                        projects with the ability to upgrade my skills in creating interesting, lively,
-                        interactive pages and the opportunity to learn new technologies.
+                    <p class="about-page__text">
+                        I’m creating inspiring and influential Landing Pages | One Page or Static
+                        websites. My expertise is HTML5, CSS3, and jQuery, also working in SCSS for much faster CSS
+                        processing.
                     </p>
-                    <!-- <a href="#" class="btn about--btn"><i class="fa fa-user"></i>More about me<span></span></a>
-                            <a href="#" class="btn about--btn"><i class="fa fa-user"></i>Hire me</a> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
-                        <defs>
-                            <filter id="filter-goo-1">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
-                                <feColorMatrix in="blur" mode="matrix"
-                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                                <feComposite in="SourceGraphic" in2="goo" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <button id="component-1" class="button button--1">
-                        <i class="fa fa-user"></i>
-                        More about me
-                        <span class="button__container">
-                            <span class="circle top-left"></span>
-                            <span class="circle top-left"></span>
-                            <span class="circle top-left"></span>
-                            <span class="button__bg"></span>
-                            <span class="circle bottom-right"></span>
-                            <span class="circle bottom-right"></span>
-                            <span class="circle bottom-right"></span>
-                        </span>
-                    </button>
-
+                    <p class="about-page__text">
+                        I'm in love with all the fancy stuff like CSS3 animations and transition, as well as
+                        Responsive design - mostly custom coded. I using Gulp.js to automate tasks also enables me to be
+                        as efficient as possible. Also I known bootstrap (if necessary to use).
+                    </p>
+                    <p class="about-page__text">
+                        So, my top priority is to communicate with the employer to make sure we are on the same page to
+                        get a successful product. I am always open to new projects!
+                    </p>
                 </div>
-                <img src="./images/ganna.jpg" alt="Ganna Shutenko" class="main-screen__img">
+            </div>
+           
+            <!-- 3-D Downward-->
+            <div class="about-page__btn">
+                <div class="button-container button-flip3d-vertical1">
+                    <div class="flipper flipper-flip3d-vertical1">
+                        <div class="button front">
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="button button-3d back">
+                            Download my CV
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-page__items">
+                <div class="about-page__box-title">Skills</div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            HTML/CSS
+                        </div>
+                        <div class="about-page__item-number">
+                            85%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 85%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            SCSS
+                        </div>
+                        <div class="about-page__item-number">
+                            70%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 70%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            JQuery
+                        </div>
+                        <div class="about-page__item-number">
+                            80%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 80%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Flexbox
+                        </div>
+                        <div class="about-page__item-number">
+                            75%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 75%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Gulp
+                        </div>
+                        <div class="about-page__item-number">
+                            85%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 85%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Bootstrap
+                        </div>
+                        <div class="about-page__item-number">
+                            50%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 50%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Responsive Web Design
+                        </div>
+                        <div class="about-page__item-number">
+                            95%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 95%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            BEM methodology
+                        </div>
+                        <div class="about-page__item-number">
+                            70%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 70%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Wordpress
+                        </div>
+                        <div class="about-page__item-number">
+                            45%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 45%"></span>
+                    </div>
+                </div>
+                <div class="about-page__item">
+                    <div class="about-page__item-head">
+                        <div class="about-page__item-name">
+                            Git
+                        </div>
+                        <div class="about-page__item-number">
+                            70%
+                        </div>
+                    </div>
+                    <div class="about-page__item-line">
+                        <span style="max-width: 70%"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
