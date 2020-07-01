@@ -64,32 +64,14 @@ h3 {
   max-width: 1052px;
   margin: 0 auto;
 }
-// .btn {
-//   font-weight: 500;
-//   height: 46px;
-//   line-height: 46px;
-//   font-size: 15px;
-//   text-transform: uppercase;
-//   padding: 0 45px;
-//   outline: none !important;
-//   overflow: hidden;
-//   display: inline-block;
-//   position: relative;
-//   letter-spacing: 0.5px;
-//   border: 0;
-//   transition: all 0.3s;
-//   cursor: pointer;
-//   color: #222831;
-//   background: #32e0c4;
-// }
-
-// .about--btn {
-//   &:hover {
-//     font-weight: 500px;
-//     background: #32e0c4;
-//     color: #fff;
-//   }
-// }
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #32e0c4;
+}
 
 .fa-user:before {
   padding-right: 10px;
@@ -328,4 +310,3 @@ h3 {
     transform: rotateX(90deg);
   }
 }
-

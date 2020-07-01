@@ -31,8 +31,9 @@
 		}
 
 	});
-
 	
+	new WOW().init();
+
 })(jQuery);
 
 function getRandom(min, max) {

@@ -312,7 +312,7 @@
 //end main screen
 
 //start about-page
-.about-page{
+.about-page {
   padding-top: 70px;
   padding-bottom: 60px;
 }
@@ -320,14 +320,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.about-page__title {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
-  text-transform: uppercase;
-  color: #32e0c4;
 }
 
 .about-page__img {
@@ -341,15 +333,15 @@
   margin-bottom: 10px;
   line-height: 1.6;
 }
-.about-page__btn{
+.about-page__btn {
   display: flex;
   justify-content: center;
   margin-top: 35px;
 }
-.about-page__items{
+.about-page__items {
   padding-top: 70px;
 }
-.about-page__box-title{
+.about-page__box-title {
   font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -367,7 +359,7 @@
   font-style: italic;
 }
 .about-page__item-number {
- font-weight: 700;
+  font-weight: 700;
   font-size: 16px;
   color: #ffffff;
 }
@@ -384,3 +376,207 @@
   }
 }
 //end about-page
+
+//start portfolio-page
+.portfolio {
+  padding: 60px 0 30px;
+}
+.portfolio__inner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio__inner-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.portfolio__box {
+  display: inline-block;
+  position: relative;
+}
+.portfolio__box-img {
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
+}
+.portfolio__box-info {
+  background-color: rgba(50, 224, 196, 0.902);
+  height: 0;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.portfolio__box-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  max-width: 310px;
+}
+.portfolio__box-text {
+  font-size: 14px;
+  max-width: 300px;
+}
+.portfolio__box:hover .portfolio__box-info {
+  width: 325px;
+  height: 205px;
+  padding: 15px;
+  transition: background 0.5s ease;
+}
+.portfolio-page__btn,
+.services__btn {
+  text-align: center;
+}
+
+//portfolio product
+
+//start servises page
+
+.services__title{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-services {
+  padding-bottom: 80px;
+}
+
+.services-list-icon {
+  font-size: 30px;
+  position: relative;
+  color: #fff;
+}
+
+.services-flip {
+  display: flex;
+  min-height: 270px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  width: calc((100% - 30px) / 2);
+  // width: 100%;
+  // height: 100%;
+}
+
+.services-flip:hover .services-list {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.services-list {
+  position: relative;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: inherit;
+  perspective: inherit;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.services-list h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.flip-content {
+  transform: translate3d(0, 0, 60px) scale(0.85);
+}
+.flip-content__title,
+.services-list__title{
+  margin-bottom: 0;
+}
+.flip-content__title{
+  color: #32e0c4;
+}
+.services-list__content{
+  margin-top: 20px;
+}
+.services-list__text{
+  margin-top: 20px;
+  max-width: 320px;
+}
+.services-list-front {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 240px;
+  background-color: #fff;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transform-style: inherit;
+  perspective: inherit;
+}
+
+.services-list-front:before {
+  right: 0;
+  content: "";
+  position: absolute;
+  background: #000;
+  left: 0;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.services-list-front h5 {
+  padding: 11px 20px;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.services-list-back {
+  transform: rotateY(-180deg) rotateZ(-180deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate3d(0, 1, 0, 180deg);
+  z-index: 1;
+  background: #32e0c4;
+  transform-style: inherit;
+  perspective: inherit;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services-list-back {
+  transform: rotateY(-180deg) rotateZ(-180deg);
+}
+
+.services-list-back h5,
+.services-list-back p {
+  color: #fff;
+}
+
+
+//start servises page
