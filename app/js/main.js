@@ -32,7 +32,7 @@
 
 	});
 	
-	new WOW().init();
+	
 
 })(jQuery);
 
