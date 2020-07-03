@@ -27,6 +27,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  padding-left: 70px;
   margin: 0;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -62,6 +63,7 @@ h3 {
 }
 .container {
   max-width: 1052px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .title {
@@ -88,6 +90,7 @@ h3 {
 .button--1,
 .button--1 .button__bg {
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
   background-color: #222831;
   border: none;
   display: inline-block;

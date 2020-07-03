@@ -16,36 +16,48 @@
 </head>
 
 <body>
-
+    <div id="preloader">
+        <div class="contpre">
+            <div class="loader">
+                <div class="l_main">
+                    <div class="l_square"><span></span><span></span><span></span></div>
+                    <div class="l_square"><span></span><span></span><span></span></div>
+                    <div class="l_square"><span></span><span></span><span></span></div>
+                    <div class="l_square"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="aside">
         <div class="overlay"></div>
         <div class="container-aside">
             <div class="container-aside-items">
                 <div class="container-items">
-                    <div class="logo">
+                    <a class="logo" href="index.html">
                         <div class="box-icon-logo">
                             <div class="item-logo"></div>
                             <div class="item-logo"></div>
                             <div class="item-logo"></div>
                         </div>
-                    </div>
+                    </a>
                     <div class="btn-close">
                         <div class="icon-item"></div>
                         <div class="icon-item"></div>
                         <div class="icon-item"></div>
                     </div>
                     <div class="item">
-                        <div class="menu-item">
+                        <a class="menu-item" href="about.html">
                             <svg class="icon icon-man">
                                 <use xlink:href="#icon-man"></use>
                             </svg>
                             <div class="menu-text">
                                 About
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <a class="menu-item" href="#team"><svg class="icon icon-book">
+                        <a class="menu-item" href="portfolio.html">
+                            <svg class="icon icon-book">
                                 <use xlink:href="#icon-book"></use>
                             </svg>
                             <div class="menu-text">
@@ -54,24 +66,24 @@
                         </a>
                     </div>
                     <div class="item">
-                        <div class="menu-item">
+                        <a class="menu-item" href="services.html">
                             <svg class="icon icon-info">
                                 <use xlink:href="#icon-info"></use>
                             </svg>
                             <div class="menu-text">
                                 Services
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item item-footer">
-                        <div class="menu-item">
+                        <a class="menu-item" href="contact.html">
                             <svg class="icon icon-email-menu">
                                 <use xlink:href="#icon-email"></use>
                             </svg>
                             <div class="menu-text">
                                 Contact
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -113,30 +125,34 @@
         </svg>
     </div>
     <header class="header">
-        <div class="container header__container">
-            <div class="header__content">
-                <img src="./images/logo.png" alt="Ganna Shutenko" class="logo">
-                <div class="header__text">
-                    Ganna Shutenko
-                    <span>Personal Website</span>
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__content">
+                    <img src="./images/logo.png" alt="Ganna Shutenko" class="logo">
+                    <div class="header__text">
+                        Ganna Shutenko
+                        <span>Personal Website</span>
+                    </div>
+                </div>
+                <ul class="header__social">
+                    <li><a href="https://www.linkedin.com/in/ganna-shutenko/" class="social"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/ganna.shutenko" class="social"><i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://github.com/Ganna-S" class="social"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://vk.com/id6832423" class="social"><i class="fa fa-vk"></i></a></li>
+                </ul>
+                <div class="header__contact">
+                    <a class="header__email" href="mailto:gannashutenko@gmail.com"><i
+                            class="fa fa-envelope"></i>gannashutenko@gmail.com</a>
+                    <div class="header__tel">
+                        <a class="tel" href="tel:+380664384139"><i class="fa fa-phone"></i>+38 066 438 4139,</a>
+                        <a class="tel" href="tel:+380935377591">+38 093 537 7591</a>
+                    </div>
                 </div>
             </div>
-            <ul class="header__social">
-                <li><a href="https://www.linkedin.com/in/ganna-shutenko/" class="social"><i
-                            class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/ganna.shutenko" class="social"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li><a href="https://github.com/Ganna-S" class="social"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://vk.com/id6832423" class="social"><i class="fa fa-vk"></i></a></li>
-            </ul>
-            <div class="header__contact">
-                <a class="header__email" href="mailto:gannashutenko@gmail.com"><i
-                        class="fa fa-envelope"></i>gannashutenko@gmail.com</a>
-                <div class="header__tel">
-                    <a class="tel" href="tel:+380664384139"><i class="fa fa-phone"></i>+38 066 438 4139,</a>
-                    <a class="tel" href="tel:+380935377591">+38 093 537 7591</a>
-                </div>
-            </div>
+
         </div>
     </header>
     <section class="portfolio">

@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {
+    .main-screen__inner {
+        flex-direction: column-reverse;
+    }
+    .main-text {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .main-screen__text {
+        padding-right: 0;
+    }
+    .about-page__inner,
+    .contact__inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-page__content {
+        margin-top: 30px;
+    }
+    .contact__title {
+        color: #fff;
+        text-align: left;
+    }
+    .form__input {
+        flex-direction: column;
+    }
+    .form__input input {
+        width: 100%;
+    }
+    .contact-form__form {
+        margin-bottom: 30px;
+    }
+    .contact__inner-item {
+        margin-right: auto;
+    }
+    .portfolio__inner {
+        justify-content: space-evenly;
+    }
+    .services-flip {
+        width: calc((100% - 30px) / 1);
+    }
+}
+@media (max-width: 760px) {
+    .main-text h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+    .main-screen__text {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .main-screen__text--other {
+        margin-bottom: 35px;
+    }
+    .header__social {
+        display: none;
+    }
+    .about-page__content {
+        text-align: center;
+    }
+    .about-page__box-title {
+        text-align: center;
+    }
+    .contact {
+        padding-top: 80px;
+    }
+    .services__content-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 560px) {
+    .main-text h1 {
+        font-size: 20px !important;
+        line-height: 28px !important;
+    }
+    .header__contact {
+        display: none;
+    }
+    .button--1,
+    .button--1 .button__bg {
+        padding: 15px 20px;
+    }
+    .about-page__img {
+        width: 70%;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .main-screen {
+        padding-top: 40px;
+    }
+    .main-text h1 {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+    .main-screen__text {
+        font-size: 10px;
+    }
+    .button--1,
+    .button--1 .button__bg {
+        font-size: 0.65em;
+        padding: 10px;
+    }
+    .button--1 {
+        .fa-user:before {
+            display: none;
+        }
+    }
+
+    .about-page__text {
+        font-size: 12px;
+    }
+    .contact-form__content {
+        font-size: 14px;
+    }
+    .portfolio__box-img {
+        width: 240px;
+        height: 160px;
+    }
+    .services__content-text {
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .services-flip {
+        min-height: 200px;
+    }
+    .services-list-front {
+        min-height: 200px;
+    }
+}

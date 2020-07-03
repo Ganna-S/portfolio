@@ -3,7 +3,7 @@
 $(window).on('load', function () {
     var $preloader = $('#preloader'),
         $svg_anm   = $preloader.find('.l_main');
-    $preloader.delay(2700).fadeOut('slow');
+    $preloader.delay(2000).fadeOut('slow');
 });
 
 
@@ -24,7 +24,7 @@ $(window).on('load', function () {
 
 	});
 	
-	
+
 
 })(jQuery);
 
