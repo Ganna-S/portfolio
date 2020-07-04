@@ -195,11 +195,12 @@
                         <div class="services-list-back">
                             <div class="flip-content">
                                 <div class="services-list-icon">
-                                    <i class="fa fa-paint-brush"></i>
+                                    <i class="fa fa-pencil"></i>
                                 </div>
                                 <div class="services-list__content">
                                     <h5 class="services-list__title">Web Design</h5>
-                                    <p class="services-list__text">Creating inspiring and influential Landing Pages | One Page or Static websites that sell and solve your business tasks.
+                                    <p class="services-list__text">Creating inspiring and influential Landing Pages |
+                                        One Page or Static websites that sell and solve your business tasks.
                                     </p>
                                 </div>
                             </div>
@@ -222,7 +223,8 @@
                                 </div>
                                 <div class="services-list__content">
                                     <h5 class="services-list__title">HTML/CSS Coding</h5>
-                                    <p class="services-list__text">Convert your design into clean, responsive HTML/CSS which will work in a desktop, tablet and mobile.
+                                    <p class="services-list__text">Convert your design into clean, responsive HTML/CSS
+                                        which will work in a desktop, tablet and mobile.
                                     </p>
                                 </div>
                             </div>
@@ -255,13 +257,15 @@
                 </div>
             </div>
             <div class="services__content">
-                <p class="services__content-text">Do you have a great PSD/Figma/Sketch etc. design that you want to be implemented in HTML/CSS coding?
+                <p class="services__content-text">Do you have a great PSD/Figma/Sketch etc. design that you want to be
+                    implemented in HTML/CSS coding?
                 </p>
                 <p class="services__content-text">Or do you want to re-design your old website?</p>
-                <p class="services__content-text">So, you want to find a skilled developer. I will help you realize your world-class project.</p>
+                <p class="services__content-text">So, you want to find a skilled developer. I will help you realize your
+                    world-class project.</p>
             </div>
             <!-- 3-D Downward-->
-            <div class="services__btn btn">
+            <a data-fancybox data-src="#modal" href="javascript:;" class="services__btn btn">
                 <div class="button-container button-flip3d-vertical1">
                     <div class="flipper flipper-flip3d-vertical1">
                         <div class="button front">
@@ -272,9 +276,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
+
+    <div id="modal">
+        <div class="modal__wrapper">
+            <div class="modal__title">
+               Hire me
+            </div>
+            <form id="form">
+                <input type="text" name="name" placeholder="Your name" required /><br />
+                <input type="text" name="email" placeholder="Your email" required /><br />
+                <textarea type="text" name="message" placeholder="Your message" required></textarea><br />
+                <button class="modal-button">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

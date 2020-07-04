@@ -1,5 +1,6 @@
 @import "global";
 @import "fonts";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 //start preloader
 
@@ -681,6 +682,7 @@
 }
 .portfolio-page__btn,
 .services__btn {
+  display: block;
   text-align: center;
 }
 
@@ -688,7 +690,7 @@
 
 //start servises page
 .services {
-  padding: 100px 0 30px;
+  padding: 80px 0 30px;
 }
 .services__title {
   margin: 30px 0;
@@ -826,7 +828,7 @@
 //start servises page
 
 //start contact
-.contact{
+.contact {
   padding-top: 70px;
 }
 .contact__title {
@@ -880,7 +882,7 @@
       color: #7a7a7a;
     }
   }
-  .button {
+  .form-button {
     outline: none;
     border: 1px solid #32e0c4;
     background: transparent;
@@ -896,13 +898,14 @@
     cursor: pointer;
   }
 }
-.button:hover {
+.form-button:hover {
   background: #32e0c4;
 }
 .form__input {
   display: flex;
   justify-content: space-between;
   input {
+    outline: none;
     border: none;
     height: 43px;
     padding-left: 17px;
@@ -919,5 +922,84 @@
   }
 }
 //end contact
+
+//start modal
+#modal{
+  display: none;
+}
+#modal {
+  background-color: #32e0c4;
+  max-width: 430px;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  border-radius: 3px;
+}
+.modal__title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.modal__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    input {
+      outline: none;
+      border-radius: 3px;
+      height: 43px;
+      margin-bottom: 8px;
+      border: none;
+      background-color: #fff;
+      color: #7a7a7a;
+      font-size: 14px;
+      padding-left: 40px;
+      display: block;
+      width: 100%;
+      &::placeholder {
+        color: #7a7a7a;
+        font-size: 14px;
+      }
+    }
+    textarea {
+      outline: none;
+      border-radius: 3px;
+      height: 103px;
+      margin-bottom: 8px;
+      border: none;
+      background-color: #fff;
+      color: #7a7a7a;
+      font-size: 14px;
+      padding-top: 15px;
+      padding-left: 40px;
+      display: block;
+      width: 100%;
+      &::placeholder {
+        color: #7a7a7a;
+        font-size: 14px;
+      }
+    }
+    .modal-button {
+      border-radius: 3px;
+      padding: 15px 0;
+      background-color: #222831;
+      width: 140px;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+.fancybox-button svg path {
+  color: #fff;
+  stroke-width: 0;
+}
+
+//end modal
 
 @import "media";

@@ -3,7 +3,7 @@
 $(window).on('load', function () {
     var $preloader = $('#preloader'),
         $svg_anm   = $preloader.find('.l_main');
-    $preloader.delay(2000).fadeOut('slow');
+    $preloader.delay(1300).fadeOut('slow');
 });
 
 
@@ -39,23 +39,7 @@ if (isSafari) {
 	document.getElementsByTagName('html')[0].classList.add('safari');
 }
 
-// Remove click on button for demo purpose
-Array.prototype.slice.call(document.querySelectorAll('.button'), 0).forEach(function (bt) {
-	bt.addEventListener('click', function (e) {
-		e.preventDefault();
-	});
-});
-
 initBt1();
-initBt2();
-initBt3();
-initBt4();
-initBt5();
-initBt6();
-initBt7();
-initBt8();
-initBt9();
-initBt10();
 
 // Button 1
 

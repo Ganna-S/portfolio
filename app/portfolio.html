@@ -260,7 +260,7 @@
                 </a>
             </div>
             <!-- 3-D Downward-->
-            <div class="portfolio-page__btn btn">
+            <a data-fancybox data-src="#modal" href="javascript:;" class="portfolio-page__btn btn">
                 <div class="button-container button-flip3d-vertical1">
                     <div class="flipper flipper-flip3d-vertical1">
                         <div class="button front">
@@ -271,9 +271,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
+
+    <div id="modal">
+        <div class="modal__wrapper">
+            <div class="modal__title">
+               Hire me
+            </div>
+            <form id="form">
+                <input type="text" name="name" placeholder="Your name" required /><br />
+                <input type="text" name="email" placeholder="Your email" required /><br />
+                <textarea type="text" name="message" placeholder="Your message" required></textarea><br />
+                <button class="modal-button">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
