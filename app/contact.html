@@ -235,14 +235,13 @@
                         the client can get a successful product. Send me your request, I'd be happy to talk over the
                         project with you!
                     </div>
-                    <form class="contact-form__form">
+                    <form id="form" class="contact-form__form">
                         <div class="form__input">
-                            <input type="text" placeholder="Name" required>
-                            <input type="text" placeholder="Email" required>
+                            <input type="text" name="name" placeholder="Name" required /><br />
+                            <input type="text" name="email" placeholder="Email" required /><br />
                         </div>
-
-                        <textarea placeholder="Message" required></textarea>
-                        <button class="button" type="submit">Send Message</button>
+                        <textarea name="text"></textarea><br />
+                        <button class="button">Send Message</button>
                     </form>
 
                 </div>
