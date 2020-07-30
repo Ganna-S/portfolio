@@ -118,3 +118,10 @@ $(document).ready(function() {
 	});
 	
 });
+
+$(function () {
+    $(".video").fancybox({
+        type: "iframe"
+    })
+    
+});

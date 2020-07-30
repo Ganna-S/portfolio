@@ -522,7 +522,11 @@
   margin: 15px 0 0;
   text-transform: uppercase;
 }
-
+.main-screen__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .ah-headline.clip span {
   padding: 0;
 }
@@ -548,8 +552,107 @@
 }
 
 .main-screen__text--other {
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 }
+
+.video {
+	display: flex;
+	align-items: center;
+	padding-left: 245px;
+	position: relative;
+	@media screen and (max-width: 1200px) {
+		padding-left: 130px;
+	}
+	&:hover {
+		.video {
+			&__video {
+				display: block;
+			}
+
+			&__play {
+				width: 100px;
+				height: 100px;
+			}
+
+			&__text {
+				span::before {
+					opacity: 0;
+					width: 0%;
+				}
+			}
+		}
+	}
+	&__play {
+		cursor: pointer;
+		width: 75px;
+		height: 75px;
+		border-radius: 50%;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: ripple-beige 1s linear infinite;
+		position: absolute;
+		left: calc((140px / 2));
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.3s;
+		overflow: hidden;
+		border: 2px solid #32e0c4;
+		svg {
+			fill: #32e0c4;
+			width: 27px;
+			height: 26px;
+		}
+	}
+}
+
+@keyframes ripple-beige {
+	0% {
+		box-shadow: 0 0 0 0 rgba(50, 224, 196, 0.1), 0 0 0 15px rgba(50, 224, 196, 0.1),
+			0 0 0 30px rgba(50, 224, 196, 0.1);
+	}
+	100% {
+		box-shadow: 0 0 0 15px rgba(50, 224, 196, 0.1), 0 0 0 30px rgba(50, 224, 196, 0.1),
+			0 0 0 45px hsla(50, 224, 196, 0);
+	}
+}
+
+@keyframes ripple-white {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 15px rgba(255, 255, 255, 0.1),
+			0 0 0 30px rgba(255, 255, 255, 0.1);
+	}
+	100% {
+		box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0.1),
+			0 0 0 45px rgba(255, 255, 255, 0);
+	}
+}
+
+.video__text {
+	font-size: 22px;
+	font-family: "Staatliches";
+}
+.video__text span {
+	cursor: pointer;
+	position: relative;
+}
+.video__video {
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .video{
+		display: none;
+	}
+}
+
 
 //end main screen
 

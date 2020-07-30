@@ -178,34 +178,56 @@
                         projects with the ability to upgrade my skills in creating interesting, lively,
                         interactive pages and the opportunity to learn new technologies.
                     </p>
+                    <div class="main-screen__box">
+                        <div class="main-screen__box-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                                <defs>
+                                    <filter id="filter-goo-1">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                                        <feColorMatrix in="blur" mode="matrix"
+                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                        <feComposite in="SourceGraphic" in2="goo" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <a href="about.html">
+                                <button id="component-1" class="button button--1">
+                                    <i class="fa fa-user"></i>
+                                    More about me
+                                    <span class="button__container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="button__bg"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </button>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
-                        <defs>
-                            <filter id="filter-goo-1">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
-                                <feColorMatrix in="blur" mode="matrix"
-                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                                <feComposite in="SourceGraphic" in2="goo" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <a href="about.html">
-                        <button id="component-1" class="button button--1">
-                            <i class="fa fa-user"></i>
-                            More about me
-                            <span class="button__container">
-                                <span class="circle top-left"></span>
-                                <span class="circle top-left"></span>
-                                <span class="circle top-left"></span>
-                                <span class="button__bg"></span>
-                                <span class="circle bottom-right"></span>
-                                <span class="circle bottom-right"></span>
-                                <span class="circle bottom-right"></span>
-                            </span>
-                        </button>
-
-                    </a>
-
+                            </a>
+                        </div>
+                        <div class="main-screen__box-video">
+                            <a class="video fancybox" data-fancybox-type="iframe"
+                                href="http://verstalshik.pro/images/about-me.mp4" data-animation-type='bottom'
+                                data-animation-duration='1500'>
+                                <div class="video__play">
+                                    <svg width="27" height="29" viewBox="0 0 27 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.5835 14.4996L0.47694 28.6447L0.47694 0.354542L26.5835 14.4996Z"
+                                            fill="url(#paint0_linear)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="26.5835" y1="9.46351" x2="23.8468"
+                                                y2="26.5717" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#54AA9C" />
+                                                <stop offset="1" stop-color="#32e0c4" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <img src="./images/ganna.jpg" alt="Ganna Shutenko" class="main-screen__img">
             </div>
